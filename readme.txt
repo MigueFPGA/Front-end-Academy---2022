@@ -18,3 +18,5 @@ Para poder conectar git con el repositorio local se debe:
 9. 	Definir la rama en la que vamos a trabajar: "git branch -M main".
 10. 	Manage set of tracked repositories: "git remote add origin https://github.com/MigueFPGA/Prueba.git".
 11. 	Subir a git hub: "git push -u origin main".
+
+Cada cambio es necesario ver el archivo con status, hacer un add, identificarnos, commitiar y hacer el push.
