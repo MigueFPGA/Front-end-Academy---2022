@@ -1,0 +1,30 @@
+/*Los parrafos descriptivos dentro de las secciones no deben tener margen*/
+.paragraph_secondary{
+    margin: 0px;
+}
+
+.image125{
+    width:100%;
+    max-width:125px;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*
+#background{
+    background-color: "p-3 bg-primary-subtle";
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+  border: border-primary;
+  opacity: .25;  
+}
+/*
