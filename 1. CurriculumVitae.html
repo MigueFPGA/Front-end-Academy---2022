@@ -1,3 +1,9 @@
+<!--Curriculum Vitae SACKMANN SALA MIGUEL-->
+<!--Resumen: Este proyecto se trata de un CV basico, utilizando HTML, CCS + Bootstrap y Java script-->
+<!--Con HTML se generó la estructura del CV-->
+<!--Con CCS y bootstrap se hizo que la pagina trabaje en grillas full responsive (para adaptarse a diferentes tamaños de dispositivos). Ademas se le dió un estilo a la pagina-->
+<!--Con Java Script se cambia el lenguaje del texto en caso de detectar que el buscador está configurado en es o es-ES-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,176 +17,133 @@
 </head>
 
 <body>
-    <script>
-        if(navigator.language == "es"){
-            console.log("Es español");
- 
-        }
-        else{
-            console.log("Es otro");
-        }
-    </script>
-    
-    <div class="p-3 bg-primary-subtle">
-        <!--Title of the document-->
-        <h1 style="text-align:center">Curriculum Vitae</h1>
+    <!--La idea es trabajar con grilla de bootstrap. La primera capaz (Layer0) sera el fondo de color mas obscuro-->
+    <div class="divLayer0Background">
         
-        <!--Separation Section line-->
-        <hr class="border border-primary opacity-.25">
+        <!--Luego arriba del Layer 0 se utilizan layer 1. Las layer 1 son filas con columnas dentro-->
+        <!--Primera fila: Foto de Header-->
+        <div class="row justify-content-center">
+            <!--Todas las filas tendran 2 columnas sin fondo y 10 con. El contenido estará dentro de las 10 columnas centradas-->
+            <div class="col-10 divLayer1Background">
+                <img src="6. Nucleo.jfif" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
 
-        <!--Grid of the document-->
+        <!--Segunda fila. Informacion personal y foto-->
         <div>
-            <!--First row. Personal info and front photo-->
-            <div>
-                <div class="row justify-content-center">
-                    <!--Data column-->
-                    <div class="col-6">
-                        <h4>Sackmann Sala Miguel.</h4>
-                        <p>Electronic Engineer.</p>
-                        <p class="paragraph_secondary">Location: San Carlos de Bariloche, Rio Negro, Argentina.</p>
-                        <p class="paragraph_secondary">Linkedin: www.linkedin.com/in/miguel-sackmann-sala</p>
-                        <p class="paragraph_secondary">E-mail: miguel.sackmann@gmail.com.</p>
-                        <p class="paragraph_secondary">Phone: 2944329086.</p>
+            <div class="row justify-content-center">
+                    <!--8 Columnas con informacion personal-->
+                    <div class="col-8 divLayerSIM1">
+                        <h2 class="text-light">Miguel Sackmann Sala.</h2>
+                        <p id="1">Electronic Engineer.</p>
+                        <p id="2" class="paragraph_secondary">Location: San Carlos de Bariloche, Rio Negro, Argentina.</p>
+                        <p id="3" class="paragraph_secondary">Linkedin: www.linkedin.com/in/miguel-sackmann-sala</p>
+                        <p id="4" class="paragraph_secondary">E-mail: miguel.sackmann@gmail.com.</p>
+                        <p id="5" class="paragraph_secondary">Phone: 2944329086.</p>
                     </div>
-                    <!--Responsive Photo column-->
-                    <div class="col-2">
+                    <!--2 columnas para la Foto carnet-->
+                    <div class="col-2 divLayerSIM2">
                         <img src="4. CarnetPhoto.jpeg" class="image125" alt="Responsive image">
-                        <!--<img src="CarnetPhoto.jpeg" max-height="2px" max-width="2px" class="img-fluid img-thumbnail" alt="Responsive image">-->
                     </div>
-                </div>
             </div>
+        </div>
 
-            <!--Separation Section line-->
-            <hr class="border border-primary opacity-.25">
-
-            <!--About section-->
-            <div>
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <h3>About</h3>
-                        <p class="paragraph_secondary">Automation and Control Engineering in nuclear projects. Graduated from the Electronic Engineering career at Universidad Nacional de Rio Negro with integrative final project: "Nuclear Reactor Core Simulator for Closed Loop Testing of Reactivity Control Systems".</p>
-                    </div>
-                </div>
+        <!--Tercer fila. Seccion de Resumen-->
+        <div class="row justify-content-center">
+            <div class="col-10 divLayer1Background">
+                <h3 id="6" class="text-light">About</h3>
+                <p id="7" class="paragraph_secondary">Automation and Control Engineering in nuclear projects. Graduated from the Electronic Engineering career at Universidad Nacional de Rio Negro with integrative final project: "Nuclear Reactor Core Simulator for Closed Loop Testing of Reactivity Control Systems".</p>
             </div>
+        </div>
 
-            <!--Separation Section line-->
-            <hr class="border border-primary opacity-.25">
+        <!--Cuarta Fila. Seccion de Experiencias-->
+        <div class="row justify-content-center">
+            <div class="col-10 divLayer1Background">
+                <h3 id="8" class="text-light">Experience</h3>
+                <h4 id="9" class="text-light">Electronic Engineer - Control and Monitoring Systems - INVAP S.E.</h4>
+                <p id="10">Projects: Argentinian Multipurpose Research Reactor (RA-10) and Brazilian Multipurpose Research Reactor (RMB).</p>
+                <p id="11" class="paragraph_secondary">PLC and SCADA Programming. STEP7-WINCC/ TiaPortal.</p>
+                <p id="12" class="paragraph_secondary">Factory Acceptance Test.</p>
+                <p id="13" class="paragraph_secondary">Reactor Control and Monitoring Subsystem Design.</p>
+                <p id="14" class="paragraph_secondary">Control Panels Design.</p>
+                <p id="15" class="paragraph_secondary">Reading and Interpretation of Piping Plans.</p>
+                <p id="16" class="paragraph_secondary">Group Interaction/ Team Colaboration.</p>
+                <p id="17" class="paragraph_secondary">2D and 3D AutoCAD and Bentley Drawing.</p>
+                <p id="18">Others.</p>
 
-            <!--Experience section-->
-            <div>
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <h3>Experience</h3>
-                        <h4>Electronic Engineer - Control and Monitoring Systems - INVAP S.E.</h4>
-                        <p>Projects: Argentinian Multipurpose Research Reactor (RA-10) and Brazilian Multipurpose Research Reactor (RMB).</p>
-                        <p class="paragraph_secondary">PLC and SCADA Programming. STEP7-WINCC/ TiaPortal.</p>
-                        <p class="paragraph_secondary">Factory Acceptance Test.</p>
-                        <p class="paragraph_secondary">Reactor Control and Monitoring Subsystem Design.</p>
-                        <p class="paragraph_secondary">Control Panels Design.</p>
-                        <p class="paragraph_secondary">Reading and Interpretation of Piping Plans.</p>
-                        <p class="paragraph_secondary">Group Interaction/ Team Colaboration.</p>
-                        <p class="paragraph_secondary">2D and 3D AutoCAD and Bentley Drawing.</p>
-                        <p>Others.</p>
+                <h4 id="19" class="text-light">Designer - Control and Monitoring Systems - INVAP S.E.</h4>
+                <p id="20">Projects: Argentinian Multipurpose Research Reactor (RA-10) and Brazilian Multipurpose Research Reactor (RMB).</p>
+                <p id="21" class="paragraph_secondary">PLC and SCADA Programming. STEP7-WINCC/ TiaPortal.</p>
+                <p id="22" class="paragraph_secondary">Factory Acceptance Test.</p>
+                <p id="23" class="paragraph_secondary">Reactor Control and Monitoring Subsystem Design.</p>
+                <p id="24" class="paragraph_secondary">Control Panels Design.</p>
+                <p id="25" class="paragraph_secondary">Reading and Interpretation of Piping Plans.</p>
+                <p id="26" class="paragraph_secondary">Group Interaction/ Team Colaboration.</p>
+                <p id="27" class="paragraph_secondary">2D and 3D AutoCAD and Bentley Drawing.</p>
+                <p id="28">Others.</p>
+                
+                <h4 id="29" class="text-light">Internship - Control and Monitoring Systems - INVAP S.E.</h4>
+                
+                <p id="30">Projects: Argentinian Multipurpose Research Reactor (RA-10) and Brazilian Multipurpose Research Reactor (RMB).</p>
+                <p id="31" class="paragraph_secondary">1 year and 7 months: Aug 2017 - Feb 2019</p>
+                <p id="32" class="paragraph_secondary">PLC and SCADA Programming. STEP7-WINCC/ TiaPortal.</p>
+                <p id="33" class="paragraph_secondary">Factory Acceptance Test.</p>
+                <p id="34" class="paragraph_secondary">Reactor Control and Monitoring Subsystem Design.</p>
+                <p id="35" class="paragraph_secondary">Control Panels Design.</p>
+                <p id="36" class="paragraph_secondary">Reading and Interpretation of Piping Plans.</p>
+                <p id="37" class="paragraph_secondary">Group Interaction/ Team Colaboration.</p>
+                <p id="38" class="paragraph_secondary">2D and 3D AutoCAD and Bentley Drawing.</p>
+                <p id="39">Others.</p>
 
-                        <h4>Designer - Control and Monitoring Systems - INVAP S.E.</h4>
-                        <p>Projects: Argentinian Multipurpose Research Reactor (RA-10) and Brazilian Multipurpose Research Reactor (RMB).</p>
-                        <p class="paragraph_secondary">PLC and SCADA Programming. STEP7-WINCC/ TiaPortal.</p>
-                        <p class="paragraph_secondary">Factory Acceptance Test.</p>
-                        <p class="paragraph_secondary">Reactor Control and Monitoring Subsystem Design.</p>
-                        <p class="paragraph_secondary">Control Panels Design.</p>
-                        <p class="paragraph_secondary">Reading and Interpretation of Piping Plans.</p>
-                        <p class="paragraph_secondary">Group Interaction/ Team Colaboration.</p>
-                        <p class="paragraph_secondary">2D and 3D AutoCAD and Bentley Drawing.</p>
-                        <p>Others.</p>
-                        
-                        <h4>Internship - Control and Monitoring Systems - INVAP S.E.</h4>
-                        
-                        <p>Projects: Argentinian Multipurpose Research Reactor (RA-10) and Brazilian Multipurpose Research Reactor (RMB).</p>
-                        <p class="paragraph_secondary">1 year and 7 months: Aug 2017 - Feb 2019</p>
-                        <p class="paragraph_secondary">PLC and SCADA Programming. STEP7-WINCC/ TiaPortal.</p>
-                        <p class="paragraph_secondary">Factory Acceptance Test.</p>
-                        <p class="paragraph_secondary">Reactor Control and Monitoring Subsystem Design.</p>
-                        <p class="paragraph_secondary">Control Panels Design.</p>
-                        <p class="paragraph_secondary">Reading and Interpretation of Piping Plans.</p>
-                        <p class="paragraph_secondary">Group Interaction/ Team Colaboration.</p>
-                        <p class="paragraph_secondary">2D and 3D AutoCAD and Bentley Drawing.</p>
-                        <p>Others.</p>
-
-                        <h4>Student Assistant - Reasoning and Solving of Mathematical Problems Course</h4>
-                        <p class="paragraph_secondary">10 months periods: Feb 2017 to Jun 2017 and Feb 2018 to Jun 2018</p>
-                        <p class="paragraph_secondary">Support for the resolution of practical and theoretical problems proposed by the teachers in charge.</p>
-                    </div>
-                </div>
+                <h4 id="40" class="text-light">Student Assistant - Reasoning and Solving of Mathematical Problems Course</h4>
+                <p id="41" class="paragraph_secondary">10 months periods: Feb 2017 to Jun 2017 and Feb 2018 to Jun 2018</p>
+                <p id="42" class="paragraph_secondary">Support for the resolution of practical and theoretical problems proposed by the teachers in charge.</p>
             </div>
+        </div>
 
-            <!--Separation Section line-->
-            <hr class="border border-primary opacity-.25">
-
-            <!--Education section-->
-            <div>
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <h3>Education</h3>
-                        <h4>Universidad Nacional de Rio Negro</h4>
-                        <p>Electronic Engineering degree.</p>
-                        <h4>United Learning Argentina</h4>
-                        <p>English Language and literature - Level B1+.</p>
-                        <h4>CEM 123</h4>
-                        <p class="paragraph_secondary">Secondary School, Scientific and Technological.</p>
-                    </div>
-                </div>
+        <!--Quinta fila. Seccion de Educacion-->
+        <div class="row justify-content-center">
+            <div class="col-10 divLayer1Background">
+                <h3 id="43" class="text-light">Education</h3>
+                <h4 id="44" class="text-light">Universidad Nacional de Rio Negro</h4>
+                <p id="45">Electronic Engineering degree.</p>
+                <h4 id="46" class="text-light">United Learning Argentina</h4>
+                <p id="47">English Language and literature - Level B1+.</p>
+                <h4 id="48" class="text-light">CEM 123</h4>
+                <p id="49" class="paragraph_secondary">Secondary School, Scientific and Technological.</p>
             </div>
-            
-            <!--Separation Section line-->
-            <hr class="border border-primary opacity-.25">
+        </div>
 
-            <!--Courses section-->
-            <div>
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <h3>Courses</h3>
-                        <h4>Cinetica Puntual - Fisica de Reactores Nucleares</h4>
-                        <p>Reactor model simulation with punctual kinetics course</p>
+        <!--Sexta fila. Seccion de Cursos-->
+        <div class="row justify-content-center">
+            <div class="col-10 divLayer1Background">
+                <h3 id="50" class="text-light">Courses</h3>
+                <h4 id="51" class="text-light">Cinetica Puntual - Fisica de Reactores Nucleares</h4>
+                <p id="52">Reactor model simulation with punctual kinetics course</p>
 
-                        <h4>Estandares Generales IEC 62138 Nuclear Power Plants y IEC 60709 Separation</h4>
-                        <p>IEC norm</p>
+                <h4 id="53" class="text-light">Estandares Generales IEC 62138 Nuclear Power Plants y IEC 60709 Separation</h4>
+                <p id="54">IEC norm</p>
 
-                        <h4>Introducción a la Ingeniería de Reactores Nucleares - INVAP S.E.</h4>
-                        <p class="paragraph_secondary">Nuclear reactor Physics</p>
-                    </div>
-                </div>
+                <h4 id="55" class="text-light">Introducción a la Ingeniería de Reactores Nucleares - INVAP S.E.</h4>
+                <p id="56" class="paragraph_secondary">Nuclear reactor Physics</p>
             </div>
+        </div>
 
-            <!--Separation Section line-->
-            <hr class="border border-primary opacity-.25">
-
-            <!--Lenguages section-->
-            <div>
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <h3>Lenguages</h3>
-                        <h4>English</h4>
-                        <p>Conversiational. B1+ level certificate</p>
-                        <h4>Spanish</h4>
-                        <p class="paragraph_secondary">Native</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Separation Section line-->
-            <hr class="border border-primary opacity-.25">
-
-            <!--Reference section-->
-            <div>
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <h3>References</h3>
-                        <h4>Reference 1</h4>
-                        <p class="paragraph_secondary">bla bla bla</p>
-                    </div>
-                </div>
+        <!--Septima fila. Seccion de Lenguajes-->
+        <div class="row justify-content-center">
+            <div class="col-10 divLayer1Background">
+                <h3 id="57" class="text-light">Lenguages</h3>
+                <h4 id="58" class="text-light">English</h4>
+                <p id="59">Conversiational. B1+ level certificate</p>
+                <h4 id="60" class="text-light">Spanish</h4>
+                <p id="61" class="paragraph_secondary">Native</p>
             </div>
         </div>
     </div>
+
+    <!--Una vez que ya el programa secuencial tiene toda la estructura y estilo de la pagina, se llama al JS que en caso 
+        de detectar que el navegador se encuentra en español o español(Español) cambia el texto a castellano, sino lo deja
+    en ingles-->
+    <script src="3. Funcionalidades.js"></script>
 </body>
 </html>

@@ -1,8 +1,32 @@
-/*Los parrafos descriptivos dentro de las secciones no deben tener margen*/
+/*Archivo de estilos*/
+
+/*Como se elijió fondo negro para la pagina, se colocaron los diferentes formatos de texto en blanco*/
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/*Se eliminó el margen de los parrafos "descriptivos"*/
 .paragraph_secondary{
     margin: 0px;
 }
 
+/*Se configuró la imagen para centrarla y que tenga un tamaño maximo*/
 .image125{
     width:100%;
     max-width:125px;
@@ -14,17 +38,41 @@
     transform: translate(-50%, -50%);
 }
 
-/*
-#background{
-    background-color: "p-3 bg-primary-subtle";
+/*Se determina un fondo negro*/
+.divLayer0Background{
+    background-color: black;
 }
 
-h1{
-    text-align: center;
+/*Formato del Layer1, un poco mas claro, con margenes y padding, ademas de bordes redondeados*/
+.divLayer1Background{
+    background-color: rgb(50, 50, 50);
+    margin: 10px;
+    padding: 10px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
-hr{
-  border: border-primary;
-  opacity: .25;  
+/*Se hizo a mano la fila 2. Tuve que hacer que de un lado se redondearan las esquinas y del otro no, para unirlo con SIM2*/
+/*Esto es porque son 8 columnas por un lado para el texto y 2 para la imagen (Que habia que unir)*/
+.divLayerSIM1{
+    background-color: rgb(50, 50, 50);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0px 0px 5px;
 }
-/*
+
+/*Se hizo a mano la fila 2. Tuve que hacer que de un lado se redondearan las esquinas y del otro no, para unirlo con SIM1*/
+/*Esto es porque son 8 columnas por un lado para el texto y 2 para la imagen (Que habia que unir)*/
+.divLayerSIM2{
+    background-color: rgb(50, 50, 50);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+
