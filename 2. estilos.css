@@ -1,30 +1,18 @@
 /*Archivo de estilos*/
 
 /*Como se elijió fondo negro para la pagina, se colocaron los diferentes formatos de texto en blanco*/
-h1{
-    color: white;
-}
+h1{ color: white; }
 
-h2{
-    color: white;
-}
+h2{ color: white; }
 
-h3{
-    color: white;
-}
+h3{ color: white; }
 
-h4{
-    color: white;
-}
+h4{ color: white; }
 
-p{
-    color: white;
-}
+p{ color: white; }
 
 /*Se eliminó el margen de los parrafos "descriptivos"*/
-.paragraph_secondary{
-    margin: 0px;
-}
+.paragraph_secondary{ margin: 0px; }
 
 /*Se configuró la imagen para centrarla y que tenga un tamaño maximo*/
 .image125{
@@ -39,9 +27,7 @@ p{
 }
 
 /*Se determina un fondo negro*/
-.divLayer0Background{
-    background-color: black;
-}
+.divLayer0Background{ background-color: black; }
 
 /*Formato del Layer1, un poco mas claro, con margenes y padding, ademas de bordes redondeados*/
 .divLayer1Background{
@@ -75,4 +61,3 @@ p{
     -webkit-border-radius: 0px 5px 5px 0px;
     border-radius: 0px 5px 5px 0px;
 }
-
